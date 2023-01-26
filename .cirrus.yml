@@ -6,7 +6,7 @@ container:
 task:
   build_script:
   - git clone --depth=1 https://github.com/Stealth1226/kernel_xiaomi_miatoll -b torpedo
-  - cd kernel_xiaomi_sm6250
+  - cd kernel_xiaomi_miatoll
   - mkdir out
   - git clone https://github.com/kdrag0n/proton-clang --depth=1 
   - export ARCH=arm64 && SUBARCH=arm64 && export PATH="$(pwd)/proton-clang/bin:$PATH" && make O=out cust_defconfig && make -j$(nproc --all) O=out CC=clang CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- 
