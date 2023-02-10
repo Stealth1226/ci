@@ -5,6 +5,6 @@ container:
   use_in_memory_disk: true
 task:
   build_script:
-  - git clone --depth=1 https://github.com/pa-stelt/kernel_xiaomi_miatoll -b torpedo-stuff
+  - git clone --depth=1 https://github.com/pa-stelt/kernel_xiaomi_miatoll -b torpedo
   - cd kernel_xiaomi_miatoll
   - curl https://raw.githubusercontent.com/Stealth1226/ci/kernel/build.sh | bash 
